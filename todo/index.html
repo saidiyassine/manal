@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="../images/manal.png" width="90px" alt="">
+        </div>
+
+        <span class="logo_name">Manal</span>
+      </div>
+
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="../test/index.html">
+                <i class="fas fa-pen"></i>
+                <span class="link-name">Test</span>
+            </a>                 
+          </li>
+          <li>
+            <a href="../bobble/index.html">
+                <i class="fas fa-gamepad"></i>
+                <span class="link-name">Bobble</span>
+            </a>
+        </li>        
+        <li>
+          <a href="../snake/index.html">
+            <i class="fas fa-dragon"></i>
+            <span class="link-name">Snake</span>
+          </a>
+          </li>          
+          <li>
+            <a href="../todo/index.html">
+              <i class="fas fa-tasks"></i>
+              <span class="link-name">To-Do List</span>
+            </a>            
+          </li>
+          <li>
+            <a href="../moyen/index.html">
+              <i class="fas fa-calculator"></i>
+              <span class="link-name">Moyen</span>
+           </a> 
+          </li>
+          <li>
+            <a href="../accueil/index.html">
+              <i class="fas fa-right-to-bracket"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <a href="#">
+              <i class="fas fa-moon"></i>
+              <span class="link-name">Dark Mode</span>
+            </a>
+
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="top">
+        <i class="fas fa-bars sidebar-toggle"></i>
+
+        <i class="fas fa-user"></i>
+
+      </div>
+
+      <div class="dash-content">
+        <div class="container">
+          <div class="form">
+            <input type="text" class="input" />
+            <input type="submit" class="add" value="Add Task" />
+          </div>
+          <div class="tasks"></div>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>     

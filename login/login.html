@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="login.css">
+    <title>Connexion / Inscription</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <!-- Formulaire de connexion -->
+            <form id="login-form" action="" class="sign-in-form">
+                <div class="logo-container">
+                   <a href="../accueil/index.html"> <img src="../images/manal.png" alt="Logo de l'entreprise" class="logo"></a>
+                </div>
+                <h2 class="title">Se connecter</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input id="login-email" type="text" placeholder="Entrez votre adresse email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input id="login-password" type="password" placeholder="Entrez votre mot de passe"required>
+                </div>
+                <input type="submit" value="Se connecter" class="btn">
+                <p class="account-text">Vous n'avez pas de compte ? <a href="#" id="sign-up-btn2">Inscrivez-vous</a></p>
+            </form>
+
+            <!-- Formulaire d'inscription -->
+            <form id="sign-up-form" action="" class="sign-up-form">
+                <div class="logo-container">
+                    <a href="../accueil/index.html"> <img src="../images/manal.png" alt="Logo de l'entreprise" class="logo"></a>
+                </div>
+                <h2 class="title">Créer un compte</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input id="signup-username" type="text" placeholder="Choisissez un nom d'utilisateur" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input id="signup-email" type="email" placeholder="Entrez votre adresse email"required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input id="signup-password" type="password" placeholder="Créez un mot de passe" required>
+                </div>
+                <input type="submit" value="S'inscrire" class="btn">
+                <p class="account-text">Vous avez déjà un compte ? <a href="#" id="sign-in-btn2">Connectez-vous ici</a></p>
+            </form>
+        </div>
+
+        <!-- Panneaux pour passer de la connexion à l'inscription -->
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Déjà membre ?</h3>
+                    <p>Si vous avez déjà un compte, connectez-vous pour continuer à profiter de nos services.</p>
+                    <button class="btn" id="sign-in-btn">Se connecter</button>
+                </div>
+                <img src="../images/signin.svg" alt="Illustration de connexion" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Nouvel utilisateur ?</h3>
+                    <p>Inscrivez-vous dès aujourd'hui et commencez à découvrir tout ce que nous avons à offrir.</p>
+                    <button class="btn" id="sign-up-btn">S'inscrire</button>
+                </div>
+                <img src="../images/signup.svg" alt="Illustration d'inscription" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
